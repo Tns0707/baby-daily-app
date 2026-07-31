@@ -1,40 +1,50 @@
-<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>宝宝成长日记</title>
-<style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <link rel="icon" href="favicon.png">
+
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <title>宝宝成长日记</title>
+
+    <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-:root{
+:根{
   --pink:#FF6B9D;--pink-light:#FFC2D9;--purple:#A855F7;--purple-light:#E9D5FF;
   --teal:#14B8A6;--teal-light:#99F6E4;--yellow:#FBBF24;--green:#22C55E;
   --orange:#F97316;--blue:#3B82F6;--bg:#FAF5FF;--card:#fff;
-  --text:#1F2937;--text-2:#6B7280;--text-3:#9CA3AF;
+  --文本:#1F2937;--文本-2:#6B7280;--文本-3:#9CA3AF;
   --border:#F3F4F6;--radius:16px;--shadow:0 2px 12px rgba(168,85,247,.08);
-}
-html,body{height:100%;overflow:hidden}
-body{
+
+
+
   font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
   background:var(--bg);color:var(--text);font-size:15px;line-height:1.5;
   display:flex;justify-content:center;
-}
-#app{
+
+
   width:100%;max-width:480px;height:100vh;height:100dvh;
   display:flex;flex-direction:column;position:relative;overflow:hidden;
   background:var(--bg);
+
+
 }
 
-/* ===== 顶部状态栏 ===== */
-.status-bar{
   height:44px;display:flex;align-items:center;justify-content:space-between;
   padding:0 16px;font-size:12px;color:var(--text-2);
   background:transparent;flex-shrink:0;
-}
 
-/* ===== 页面容器 ===== */
+
+}
 .pages{flex:1;overflow:hidden;position:relative}
 .page{
   position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;
